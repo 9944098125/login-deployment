@@ -1,0 +1,22 @@
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "srinivas_prasad",
+  "name": "Srinivas",
+  "password": "Srinivas@8",
+  "gender": "male",
+  "location": "Vizag"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "srinivas_prasad",
+  "password": "Srinivas@8"
+}
+// our username in table
+// srinivas_akella| srinivas| srinivas@8| male| kakinada
