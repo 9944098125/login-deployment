@@ -21,14 +21,14 @@ const initializeDbAndServer = async () => {
 
     app.listen(process.env.PORT || 3000, () =>
       console.log("Server Running at http://localhost:3000/")
-    );
+    ); // already wrote the port with process.env.PORT  and all
   } catch (error) {
     console.log(`DB Error: ${error.message}`);
     process.exit(1);
   }
 };
 
-initializeDbAndServer();
+initializeDbAndServer(); // pushing the app to github again
 
 const validatePassword = (password) => {
   return password.length > 4;
